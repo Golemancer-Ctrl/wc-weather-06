@@ -6,27 +6,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Weather</title>
 </head>
 
 <body>
-    <aside id="search-box">
-        <h2> Search for a City </h2>
-        <input type="text" id="city" placeholder="Search for a city..." />
-        <button id="search-btn"> Search </button>
-    </aside>
+    <h1>Weather Forecast</h1>
 
-    <main id="weather-display">
-        <section id="today">
-            <h2> Search History </h2>
-            <ul id="search-history">
-            </ul>
-        </section>
+    <div id="container">
+        <aside id="search-box">
+            <h2> Search for a City </h2>
+            <input type="text" id="city" placeholder="Search for a city..." />
+            <button id="search-btn"> Search </button>
+        </aside>
 
-        <section id="five-day">
-            <h3> 5-Day Forecast </h3>
-        </section>
-    </main>
+        <main id="weather-display">
+            <section id="search-history">
+                <h3> Search History </h3>
+                <ul>
+                    <li> history will populate here </li>
+                </ul>
+            </section>
+
+            <section id="five-day">
+                <h3> 5-Day Forecast </h3>
+            </section>
+        </main>
+    </div>
+
     <script src="assets/index.js"></script>
 </body>
 
